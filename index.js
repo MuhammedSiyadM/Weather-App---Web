@@ -33,7 +33,7 @@ app.post('/',function (req,res) {
   });
 })
 const PORT = process.env.PORT;
-app.listen(3000,function(err){   //To create server
+app.listen(PORT,function(err){   //To create server
   if(err){
     console.log(err);
   }
