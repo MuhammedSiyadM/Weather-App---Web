@@ -34,11 +34,6 @@ app.post('/',function (req,res) {
   });
 })
 
-app.listen(PORT,function(err){   //To create server
-  if(err){
-    console.log(err);
-  }
-  else{
+app.listen(PORT,function(){   //To create server
    console.log('Example app listening on port 3000!');
-  }
 })
