@@ -1,4 +1,4 @@
-let express = require('express');
+7let express = require('express');
 const request = require('request');
 const bodyParser = require('body-parser');  //middleware
 let app = express();
@@ -32,7 +32,7 @@ app.post('/',function (req,res) {
   }
   });
 })
-
+const PORT = process.env.PORT;
 app.listen(3000,function(err){   //To create server
   if(err){
     console.log(err);
