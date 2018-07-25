@@ -1,7 +1,8 @@
-7let express = require('express');
+let express = require('express');
 const request = require('request');
 const bodyParser = require('body-parser');  //middleware
 let app = express();
+const PORT = process.env.PORT;
 
 let apiKey = 'c4a254bb4ab159d56de569c4fd88e122';
 
@@ -32,7 +33,7 @@ app.post('/',function (req,res) {
   }
   });
 })
-const PORT = process.env.PORT;
+
 app.listen(PORT,function(err){   //To create server
   if(err){
     console.log(err);
