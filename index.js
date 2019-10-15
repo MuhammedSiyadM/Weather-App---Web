@@ -1,6 +1,6 @@
 let express = require('express');
 const request = require('request');
-const bodyParser = require('body-parser');  //middleware
+const bodyParser = require('body-parser');  // a middleware
 let app = express();
 const PORT = process.env.PORT;
 
@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended:true }));   // since it is a middleware
 app.set('view engine', 'ejs'); //since it is a middleware
 app.use(express.static('public'));  //To tell express to use these files.
 
-app.get('/',function(req,res){   //To render ejs page
+app.get('/',function(req,res){   //To render embedded js page
   res.render('index',{weather:null,error:null});
 })
 
